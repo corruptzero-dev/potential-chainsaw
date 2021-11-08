@@ -22,9 +22,9 @@ public class ImageFunctionsImpl extends ImageFunctions{
     @Override
     int inversion(int color) throws Exception {
         float[] arr = RgbMaster.rgbIntToArray(color);
-        arr[0] = 255-arr[0];
-        arr[1] = 255-arr[1];
-        arr[2] = 255-arr[2];
+        arr[0] = 1-arr[0];
+        arr[1] = 1-arr[1];
+        arr[2] = 1-arr[2];
         return RgbMaster.rgbArrayToInt(arr);
     }
 
